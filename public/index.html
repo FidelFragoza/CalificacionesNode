@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Calificaciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Gestión de Calificaciones</h1>
+
+  <!-- Formulario para agregar o actualizar calificaciones -->
+  <form id="calificacion-form">
+    <input type="hidden" id="calificacion-id">
+    <input type="text" id="nombre" placeholder="Nombre del alumno" required>
+    <input type="text" id="materia" placeholder="Materia" required>
+    <input type="number" id="calificacion" placeholder="Calificación" required>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <!-- Tabla para mostrar calificaciones -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Materia</th>
+        <th>Calificación</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="calificaciones-list"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
